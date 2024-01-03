@@ -11,13 +11,16 @@ mylist=[i for i in mystring]
 find_list=list()
 
 while your_point >0:
-
 	for element in mystring:
 		if element in find_list:
 
 			print(element)
 		else:
 			print("-")	
+			
+	if mylist==list():
+		print("You won!!!!")
+		break
 	
 	myletter=input("Herf texmin et: ")
 
@@ -29,9 +32,6 @@ while your_point >0:
 
 		print(f"Duzdur: Sozun terkibinde {myletter} herfi var.")
 
-		if mylist==list():
-			print("You won!!!!")
-			break
 	else:
 		print("Sehvdir")
 		your_point -=1
@@ -40,6 +40,3 @@ while your_point >0:
 if your_point == 0:	
 
 	print("You died!!!!!")			
-
-
-
